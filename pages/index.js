@@ -46,7 +46,7 @@ export default function Home() {
                 Talk in the Thirdyverse anonymously!
               </Heading>
               <Text textAlign={"center"}>
-                Only Thrdyverse users can post. We do not track who made the post
+                Only Thrdyverse and .beb users can post. We do not track who made the post
                 <Button
                   ml={2}
                   as="a"
