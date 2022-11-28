@@ -17,8 +17,8 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Farcaster BEBfessions</title>
-        <meta name="description" content="Anon feedback app" />
+        <title>Thirdyverse Anon-fessions</title>
+        <meta name="description" content="Thirdyverse Anon feedback app" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <WalletContextProvider>
@@ -43,10 +43,10 @@ export default function Home() {
                 m="auto"
                 textAlign={"center"}
               >
-                Talk about Farcaster anonymously!
+                Talk in the Thirdyverse anonymously!
               </Heading>
               <Text textAlign={"center"}>
-                Only Farcaster users can post. We do not track who made the post
+                Only Thrdyverse users can post. We do not track who made the post
                 <Button
                   ml={2}
                   as="a"
@@ -66,7 +66,7 @@ export default function Home() {
                   href="https://bebdotxyz.notion.site/How-to-set-up-Farfession-for-your-community-3adbd5e1a1b349dcb720dfdd5787e66b"
                   target="_blank"
                 >
-                  Guide on how to deploy your own Farfession
+                  Guide on how to deploy your own Thirdyverse BEBfession
                 </Button>
               </Box>
               <CreatePostInput bebdomain={COMMUNITY_BEBDOMAIN} />
