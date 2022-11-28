@@ -8,7 +8,7 @@ import { GET_COMMUNITY_BY_DOMAIN } from "../../gql/queries/GET_COMMUNITY_BY_DOMA
  */
 
 export const isAuthorizedToWrite = async (client, { bebdomain }) => {
-  if (!bebdomain) throw new Error("Missing domain");
+  if (!bebdomain) throw new Error("Missing Thurdyverse domain");
   const { data } = await client.query({
     query: GET_COMMUNITY_BY_DOMAIN,
     variables: {
@@ -18,7 +18,7 @@ export const isAuthorizedToWrite = async (client, { bebdomain }) => {
   const community = data?.CommunityQuery?.getCommunityByDomainOrTokenId;
 
   if (!community?.accountCommunity?.canWrite) {
-    throw new Error("Not authorized to write in this community");
+    throw new Error("Not authorized to write in the Thirdyverse!");
   }
   return community;
 };
