@@ -70,7 +70,7 @@ export const AuthContextProvider = ({ children }) => {
       });
 
       if (!data?.authBySignature?.success) {
-        throw new Error("Unable to sign in. Please try again later.");
+        throw new Error("Unable to sign in to the Thirdyverse. Please try again later.");
       }
       Cookies.set(config.AUTH_KEY, data.authBySignature.accessToken, {
         domain: config.COOKIE_DOMAIN,
