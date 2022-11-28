@@ -2,7 +2,7 @@ export const dev = {
   AUTH_KEY: "beb-yikyak-auth-token-dev",
   SERVER_URI: "http://localhost:8080",
   COOKIE_DOMAIN: "localhost",
-  COMMUNITY_BEBDOMAIN: "bebdomains",
+  COMMUNITY_BEBDOMAIN: "thirdyverse",
   BOT_ID: process.env.NEXT_PUBLIC_BOT_ID,
 };
 
@@ -15,7 +15,7 @@ export const prod = {
   SERVER_URI: "https://protocol.beb.xyz",
   AUTH_KEY: "beb-yikyak-auth-token-prod",
   COOKIE_DOMAIN: ".farfessions.xyz",
-  COMMUNITY_BEBDOMAIN: "bebcaster",
+  COMMUNITY_BEBDOMAIN: "thirdyverse",
   BOT_ID: process.env.NEXT_PUBLIC_BOT_ID,
 };
 
